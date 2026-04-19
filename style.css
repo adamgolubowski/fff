@@ -51,14 +51,18 @@ img { max-width: 100%; display: block; }
 
 .topbar-name {
   font-family: var(--sans);
-  font-size: 1.25rem;
+  font-size: 1.5rem;
   color: var(--text);
   letter-spacing: -.01em;
 }
 
-.topbar-nav { display: flex; gap: 2rem; }
+.topbar-nav { 
+  display: flex;
+  flex: 0 0 auto; 
+  gap: 2rem; 
+}
 .topbar-nav a {
-  font-size: .88rem;
+  font-size: 1.25rem;
   color: var(--text-soft);
   letter-spacing: .03em;
   text-transform: lowercase;
@@ -288,14 +292,14 @@ img { max-width: 100%; display: block; }
 }
 
 .contact-details dt {
-  font-size: .78rem;
+  font-size: 1.2rem;
   text-transform: uppercase;
   letter-spacing: .1em;
-  color: var(--white);
+  color: var(--text-soft);
 }
 
 .contact-details dd {
-  font-size: .98rem;
+  font-size: 1.5rem;
   color: var(--text);
 }
 
@@ -379,7 +383,7 @@ img { max-width: 100%; display: block; }
 .footer {
   text-align: center;
   padding: 3rem 2rem;
-  color: var(--white);
+  color: var(--text-soft);
   font-size: .82rem;
   letter-spacing: .03em;
 }
