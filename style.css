@@ -37,6 +37,10 @@ img { max-width: 100%; display: block; }
 
 ::selection { background: rgba(0,188,172,.2); }
 
+h1, h2, h3, p {
+  text-wrap: pretty;
+}
+
 /* ── Top bar ─────────────────────────────────────── */
 .topbar {
   position: fixed;
@@ -143,7 +147,7 @@ img { max-width: 100%; display: block; }
 
 .label {
   display: inline-block;
-  font-size: 1rem;
+  font-size: 1.5rem;
   letter-spacing: .12em;
   text-transform: uppercase;
   color: var(--accent);
