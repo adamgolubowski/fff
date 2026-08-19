@@ -14,7 +14,7 @@
   --accent:          var(--emerald);
   --accent-2:        var(--electric-rose);
   --border:          #e4e2de;
-  --sans:            "Roboto", sans-serif;
+  --sans:            "Syne", sans-serif;
   --max-w:           960px;
 }
 
@@ -59,6 +59,7 @@ h1, h2, h3, p {
   font-size: 1.5rem;
   color: var(--text);
   letter-spacing: -.01em;
+  font-weight: 700;
 }
 
 .topbar-nav { 
@@ -72,6 +73,7 @@ h1, h2, h3, p {
   letter-spacing: .03em;
   text-transform: lowercase;
   transition: color .25s;
+  font-weight:500;
 }
 .topbar-nav a:hover { color: var(--accent); }
 
@@ -125,6 +127,7 @@ h1, h2, h3, p {
   max-width: 480px;
   margin: 0 auto;
   line-height: 1.75;
+  font-weight:500;
 }
 
 .intro-scroll {
@@ -152,12 +155,13 @@ h1, h2, h3, p {
   text-transform: uppercase;
   color: var(--accent);
   margin-bottom: .6rem;
+  font-weight:500;
 }
 
 .section-header h2 {
   font-family: var(--sans);
   font-size: clamp(2.6rem, 4vw, 3.6rem);
-  font-weight: 400;
+  font-weight: 700;
   letter-spacing: -.015em;
   color: var(--text);
 }
@@ -260,7 +264,7 @@ h1, h2, h3, p {
 .person h3 {
   font-family: var(--sans);
   font-size: 2rem;
-  font-weight: 400;
+  font-weight: 700;
   margin-bottom: .15rem;
 }
 
@@ -270,12 +274,14 @@ h1, h2, h3, p {
   letter-spacing: .1em;
   color: var(--accent);
   margin-bottom: .7rem;
+  font-weight: 700;
 }
 
 .person-bio {
   font-size: 1.3rem;
   color: var(--text-soft);
   line-height: 1.65;
+  font-weight:500;
 }
 
 /* ── Contact ─────────────────────────────────────── */
@@ -304,6 +310,7 @@ h1, h2, h3, p {
   flex-direction: column;
   gap: 1.2rem;
   margin-bottom: 2rem;
+  font-weight: 500;
 }
 
 .contact-details dt {
