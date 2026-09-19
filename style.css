@@ -1,36 +1,117 @@
 :root {
-  --white:           #ffffff;
-  --black:           #000000;
-  --emerald:         #1EBA6F;
-  --electric-rose:   #D93EA1ff;
-  --sans:            "Roboto", sans-serif;
+  --white:         #ffffff;
+  --black:         #111113;
+  --gray-light:    #76767b;
+  --accent:        #1EBA6F;
+  --sans:          "Roboto", sans-serif;
+}
+
+* {
+  box-sizing: border-box;
 }
 
 body {
   font-family: var(--sans);
+  color: var(--black);
+  background-color: var(--white);
+  margin: 0;
+  padding: 60px 24px;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  line-height: 1.25;
 }
 
-.section { 
-    max-width: 800px;
-    width: 100%;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 50px;
-    font-size: 4em;
+.wrapper {
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
 }
 
 #logo {
-    max-width: 800px;
-    width: 100%;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 50px;
-    margin-bottom: 80px;
+  width: 100%;
+  margin-bottom: 50px;
 }
 
-img { 
-    width: 100%;
+img {
+  width: 100%;
+  max-width: 650px;
+  height: auto;
+  display: block;
 }
 
+.section {
+  width: 100%;
+  margin-bottom: 50px;
+}
+
+.section:last-child {
+  margin-bottom: 0;
+}
+
+.tagline {
+  font-size: clamp(2rem, 5vw, 3.5rem);
+  font-weight: 500;
+  letter-spacing: -0.5px;
+  margin: 0;
+  color: var(--black);
+}
+
+.contact-header {
+  margin-bottom: 30px;
+}
+
+.name {
+  font-size: clamp(2.2rem, 6vw, 4rem);
+  font-weight: 700;
+  margin: 0;
+  letter-spacing: -1px;
+}
+
+.contact-details {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.detail-row {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.label {
+  font-size: clamp(0.875rem, 2vw, 1rem);
+  font-weight: 400;
+  color: var(--gray-light);
+  text-transform: lowercase;
+  letter-spacing: 0.5px;
+}
+
+.value {
+  font-size: clamp(1.5rem, 4vw, 2.5rem);
+  font-weight: 500;
+  color: var(--black);
+  text-decoration: none;
+  transition: color 0.2s ease;
+  width: fit-content;
+  word-break: break-word;
+}
+
+.value:hover {
+  color: var(--accent);
+}
+
+@media (min-width: 768px) {
+  .detail-row {
+    flex-direction: row;
+    align-items: baseline;
+    gap: 30px;
+  }
+  .label {
+    width: 100px;
+    flex-shrink: 0;
+  }
+}
